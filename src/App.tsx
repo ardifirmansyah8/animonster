@@ -1,12 +1,16 @@
-import "./index.css";
+import { Provider } from "urql";
+
+import Genres from "./components/Genres";
+import client from "./services/client";
+
+import "./styles/index.css";
+import HomePage from "./pages/Home";
 
 const App = () => {
   return (
-    <>
-      <div className="text-3xl font-bold underline text-teal-100">
-        Hello world!
-      </div>
-    </>
+    <Provider value={client}>
+      <HomePage />
+    </Provider>
   );
 };
 

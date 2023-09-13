@@ -1,0 +1,25 @@
+fragment media on Media {
+  id
+  title {
+    romaji
+    english
+    native
+  }
+  coverImage {
+    extraLarge
+    large
+    medium
+  }
+  bannerImage
+  description
+  episodes
+  genres
+  averageScore
+  popularity
+  format
+  studios {
+    nodes {
+      name
+    }
+  }
+}

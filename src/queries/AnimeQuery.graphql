@@ -1,0 +1,16 @@
+#import "./MediaFragment.graphql"
+
+query AnimeQuery($page: Int, $perPage: Int, $genres: [String]) {
+  anime: Page(page: $page, perPage: $perPage) {
+    pageInfo {
+      total
+      currentPage
+      lastPage
+      hasNextPage
+      perPage
+    }
+    media(sort: TRENDING_DESC, type: ANIME, isAdult: false, genre_in: $genres) {
+      ...media
+    }
+  }
+}
