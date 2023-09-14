@@ -1,0 +1,540 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`test Card > Card should show button bookmark 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex flex-col shadow rounded-md border"
+      >
+        <img
+          alt=""
+          class="w-full 2xl:h-[315px] lg:h-[285px] h-[340px] rounded-t-md"
+          src=""
+        />
+        <div
+          class="p-2 flex flex-col justify-between flex-1"
+        >
+          <div
+            class="hover:text-blue-400 cursor-pointer text-sm"
+          >
+            <a
+              href="/detail/0"
+            />
+          </div>
+          <div
+            class="flex items-center gap-1 mt-1"
+          >
+            <span
+              class="text-yellow-400"
+            >
+              <svg
+                class="tabler-icon tabler-icon-star-filled"
+                fill="none"
+                height="14"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                  fill="currentColor"
+                  stroke-width="0"
+                />
+              </svg>
+            </span>
+            <div
+              class="text-xs text-red-500"
+            >
+              0
+              %
+            </div>
+            <div>
+              •
+            </div>
+            <div>
+              100
+               Episodes
+            </div>
+          </div>
+          <button
+            class="bg-red-500 text-white text-center border px-2 py-1 w-full mt-2 rounded-md"
+          >
+            Remove Bookmark
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex flex-col shadow rounded-md border"
+    >
+      <img
+        alt=""
+        class="w-full 2xl:h-[315px] lg:h-[285px] h-[340px] rounded-t-md"
+        src=""
+      />
+      <div
+        class="p-2 flex flex-col justify-between flex-1"
+      >
+        <div
+          class="hover:text-blue-400 cursor-pointer text-sm"
+        >
+          <a
+            href="/detail/0"
+          />
+        </div>
+        <div
+          class="flex items-center gap-1 mt-1"
+        >
+          <span
+            class="text-yellow-400"
+          >
+            <svg
+              class="tabler-icon tabler-icon-star-filled"
+              fill="none"
+              height="14"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                fill="currentColor"
+                stroke-width="0"
+              />
+            </svg>
+          </span>
+          <div
+            class="text-xs text-red-500"
+          >
+            0
+            %
+          </div>
+          <div>
+            •
+          </div>
+          <div>
+            100
+             Episodes
+          </div>
+        </div>
+        <button
+          class="bg-red-500 text-white text-center border px-2 py-1 w-full mt-2 rounded-md"
+        >
+          Remove Bookmark
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`test Card > Card should show episode 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex flex-col shadow rounded-md border"
+      >
+        <img
+          alt=""
+          class="w-full 2xl:h-[315px] lg:h-[285px] h-[340px] rounded-t-md"
+          src=""
+        />
+        <div
+          class="p-2 flex flex-col justify-between flex-1"
+        >
+          <div
+            class="hover:text-blue-400 cursor-pointer text-sm"
+          >
+            <a
+              href="/detail/0"
+            />
+          </div>
+          <div
+            class="flex items-center gap-1 mt-1"
+          >
+            <span
+              class="text-yellow-400"
+            >
+              <svg
+                class="tabler-icon tabler-icon-star-filled"
+                fill="none"
+                height="14"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                  fill="currentColor"
+                  stroke-width="0"
+                />
+              </svg>
+            </span>
+            <div
+              class="text-xs text-red-500"
+            >
+              0
+              %
+            </div>
+            <div>
+              •
+            </div>
+            <div>
+              100
+               Episodes
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex flex-col shadow rounded-md border"
+    >
+      <img
+        alt=""
+        class="w-full 2xl:h-[315px] lg:h-[285px] h-[340px] rounded-t-md"
+        src=""
+      />
+      <div
+        class="p-2 flex flex-col justify-between flex-1"
+      >
+        <div
+          class="hover:text-blue-400 cursor-pointer text-sm"
+        >
+          <a
+            href="/detail/0"
+          />
+        </div>
+        <div
+          class="flex items-center gap-1 mt-1"
+        >
+          <span
+            class="text-yellow-400"
+          >
+            <svg
+              class="tabler-icon tabler-icon-star-filled"
+              fill="none"
+              height="14"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                fill="currentColor"
+                stroke-width="0"
+              />
+            </svg>
+          </span>
+          <div
+            class="text-xs text-red-500"
+          >
+            0
+            %
+          </div>
+          <div>
+            •
+          </div>
+          <div>
+            100
+             Episodes
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`test Card > should render Card 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex flex-col shadow rounded-md border"
+      >
+        <img
+          alt=""
+          class="w-full 2xl:h-[315px] lg:h-[285px] h-[340px] rounded-t-md"
+          src=""
+        />
+        <div
+          class="p-2 flex flex-col justify-between flex-1"
+        >
+          <div
+            class="hover:text-blue-400 cursor-pointer text-sm"
+          >
+            <a
+              href="/detail/0"
+            />
+          </div>
+          <div
+            class="flex items-center gap-1 mt-1"
+          >
+            <span
+              class="text-yellow-400"
+            >
+              <svg
+                class="tabler-icon tabler-icon-star-filled"
+                fill="none"
+                height="14"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                  fill="currentColor"
+                  stroke-width="0"
+                />
+              </svg>
+            </span>
+            <div
+              class="text-xs text-red-500"
+            >
+              0
+              %
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex flex-col shadow rounded-md border"
+    >
+      <img
+        alt=""
+        class="w-full 2xl:h-[315px] lg:h-[285px] h-[340px] rounded-t-md"
+        src=""
+      />
+      <div
+        class="p-2 flex flex-col justify-between flex-1"
+      >
+        <div
+          class="hover:text-blue-400 cursor-pointer text-sm"
+        >
+          <a
+            href="/detail/0"
+          />
+        </div>
+        <div
+          class="flex items-center gap-1 mt-1"
+        >
+          <span
+            class="text-yellow-400"
+          >
+            <svg
+              class="tabler-icon tabler-icon-star-filled"
+              fill="none"
+              height="14"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+                fill="currentColor"
+                stroke-width="0"
+              />
+            </svg>
+          </span>
+          <div
+            class="text-xs text-red-500"
+          >
+            0
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
