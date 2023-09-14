@@ -1,7 +1,5 @@
 import { FC, useEffect, useMemo, useState } from "react";
 import InfiniteScroll from "react-infinite-scroller";
-import { Link } from "react-router-dom";
-import { IconStarFilled } from "@tabler/icons-react";
 import { useQuery } from "urql";
 
 import Genres from "../components/Genres";
@@ -9,7 +7,6 @@ import Layout from "../components/Layout";
 import Loader from "../components/Loader";
 import AnimeQuery from "../queries/AnimeQuery.graphql";
 import { Anime, Genres as GenresType, PageInfo } from "../types";
-import { ratingColor } from "../utils";
 import Card from "../components/Card";
 
 type AnimeResponse = {

@@ -1,12 +1,12 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
+import { IconHome2 } from "@tabler/icons-react";
 
 import Layout from "../components/Layout";
 import Card from "../components/Card";
 import { BOOKMARK } from "../constants";
 import { Anime } from "../types";
 import { getItem } from "../utils";
-import { Link } from "react-router-dom";
-import { IconHome2 } from "@tabler/icons-react";
 
 const BookmarksPage: FC = () => {
   const anime = getItem(BOOKMARK) as Anime[];
