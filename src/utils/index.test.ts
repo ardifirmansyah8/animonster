@@ -1,6 +1,6 @@
-import { describe, expect, test, vi } from "vitest";
+import { describe, expect, test } from "vitest";
 
-import { getItem, ratingColor, setItem } from ".";
+import { getItem, ratingColor } from ".";
 
 describe("test utils", () => {
   test("ratingColor return green", () => {
