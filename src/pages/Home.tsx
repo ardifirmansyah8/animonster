@@ -1,13 +1,16 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect, useMemo, useState } from "react";
 import InfiniteScroll from "react-infinite-scroller";
+import { Link } from "react-router-dom";
 import { IconStarFilled } from "@tabler/icons-react";
 import { useQuery } from "urql";
 
 import Genres from "../components/Genres";
-import AnimeQuery from "../queries/AnimeQuery.graphql";
-import { Anime, PageInfo } from "../types";
-import Loader from "../components/Loader";
 import Layout from "../components/Layout";
+import Loader from "../components/Loader";
+import AnimeQuery from "../queries/AnimeQuery.graphql";
+import { Anime, Genres as GenresType, PageInfo } from "../types";
+import { ratingColor } from "../utils";
+import Card from "../components/Card";
 
 type AnimeResponse = {
   anime: {
@@ -18,14 +21,21 @@ type AnimeResponse = {
 
 const HomePage: FC = () => {
   const [page, setPage] = useState(1);
+  const [selectedGenres, setSelectedGenres] = useState<GenresType>({});
   const [anime, setAnime] = useState<Anime[]>([]);
+
+  const genreQuery = useMemo(
+    () =>
+      Object.keys(selectedGenres).filter((key) => selectedGenres[key] === true),
+    [selectedGenres]
+  );
 
   const [{ data, fetching }] = useQuery<AnimeResponse>({
     query: AnimeQuery,
     variables: {
       page,
-      perPage: 20,
-      genres: null,
+      perPage: 30,
+      genres: genreQuery && genreQuery.length > 0 ? genreQuery : null,
     },
   });
 
@@ -35,26 +45,25 @@ const HomePage: FC = () => {
     }
   }, [data]);
 
+  const onChangeSelectedGenre = (genres: GenresType) => {
+    setAnime([]);
+    setSelectedGenres(genres);
+    setPage(1);
+  };
+
   const handleLoadMore = () => {
     if (!fetching) {
       setPage(page + 1);
     }
   };
 
-  const ratingColor = (rating: number): string => {
-    if (rating > 75) {
-      return "text-green-500";
-    } else if (rating < 75 && rating > 60) {
-      return "text-orange-500";
-    } else {
-      return "text-red-500";
-    }
-  };
-
   return (
     <Layout>
-      <div className="py-4 px-8 mt-12">
-        <Genres />
+      <div className="py-4 px-8 mt-14">
+        <Genres
+          selectedGenres={selectedGenres}
+          onChangeSelectedGenre={onChangeSelectedGenre}
+        />
 
         <InfiniteScroll
           initialLoad={false}
@@ -64,36 +73,9 @@ const HomePage: FC = () => {
           threshold={10}
           loader={<Loader key={"loader"} />}
         >
-          <div className="grid grid-cols-5 gap-y-6 mt-5 xl:gap-x-16 lg:gap-x-4">
-            {anime.map((media, index) => (
-              <div
-                key={media.title.romaji + index}
-                className="flex flex-col shadow rounded-md border"
-              >
-                <img
-                  src={media.coverImage.large}
-                  className="w-full h-[285px] rounded-t-md"
-                  alt={media.title.romaji}
-                />
-
-                <div className="p-2 flex flex-col justify-between flex-1">
-                  <div className="hover:text-blue-400 cursor-pointer">
-                    {media.title.english || media.title.romaji}
-                  </div>
-                  <div className="flex items-center gap-1 mt-1">
-                    <span className="text-yellow-400">
-                      <IconStarFilled size={14} />
-                    </span>
-                    <div
-                      className={`text-xs ${ratingColor(media.averageScore)}`}
-                    >
-                      {media.averageScore}%
-                    </div>
-                    <div>&#8226;</div>
-                    <div className="text-xs">{media.episodes} Episodes</div>
-                  </div>
-                </div>
-              </div>
+          <div className="grid gap-y-6 mt-5 2xl:grid-cols-6 xl:gap-x-8 lg:grid-cols-5 lg:gap-x-4">
+            {anime.map((media) => (
+              <Card key={media.id} data={media} />
             ))}
           </div>
         </InfiniteScroll>

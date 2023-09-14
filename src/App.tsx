@@ -1,15 +1,14 @@
+import { RouterProvider } from "react-router-dom";
 import { Provider } from "urql";
 
-import Genres from "./components/Genres";
+import router from "./router";
 import client from "./services/client";
-
 import "./styles/index.css";
-import HomePage from "./pages/Home";
 
 const App = () => {
   return (
     <Provider value={client}>
-      <HomePage />
+      <RouterProvider router={router} />
     </Provider>
   );
 };

@@ -1,3 +1,5 @@
+export type Genres = Record<string, boolean>
+
 export type PageInfo = {
     total: number;
     currentPage: number;

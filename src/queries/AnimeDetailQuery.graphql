@@ -1,0 +1,7 @@
+#import "./MediaFragment.graphql"
+
+query AnimeDetailQuery($id: Int) {
+  media: Media(id: $id, type: ANIME) {
+    ...media
+  }
+}
