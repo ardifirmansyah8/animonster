@@ -7,7 +7,7 @@ import { ratingColor } from "../utils";
 
 type Props = {
   data: Anime;
-  isBookmark: boolean;
+  isBookmark?: boolean;
 };
 
 const Card: FC<Props> = ({ data, isBookmark = false }) => {
@@ -15,7 +15,7 @@ const Card: FC<Props> = ({ data, isBookmark = false }) => {
     <div className="flex flex-col shadow rounded-md border">
       <img
         src={data.coverImage.large}
-        className="w-full 2xl:h-[315px] h-[285px] rounded-t-md"
+        className="w-full 2xl:h-[315px] lg:h-[285px] h-[340px] rounded-t-md"
         alt={data.title.romaji}
       />
 

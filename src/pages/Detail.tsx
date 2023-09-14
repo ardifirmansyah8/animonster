@@ -71,14 +71,14 @@ const DetailPage: FC = () => {
           >
             <div className="bg-gradient-to-t from-gray-500 w-full h-full"></div>
           </div>
-          <div className="grid grid-cols-5 pl-8">
-            <div>
+          <div className="grid md:grid-cols-5 grid-cols-1 md:pl-8">
+            <div className="md:block flex justify-center">
               <img src={data?.media.coverImage.large} className="-mt-48" />
             </div>
             <div className="col-span-4 p-8">
               <div>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
+                <div className="flex md:flex-row flex-col items-center md:justify-between">
+                  <div className="flex items-center gap-2 md:mb-0 mb-4">
                     <div className="text-2xl font-bold">{title}</div>
                   </div>
                   {isBookmark ? (
@@ -97,11 +97,11 @@ const DetailPage: FC = () => {
                     />
                   )}
                 </div>
-                <div className="flex items-center gap-2 mt-4">
+                <div className="flex md:flex-row flex-col items-center gap-2 mt-4">
                   <div className="text-xl font-bold">
                     {data?.media.studios.nodes[0].name}
                   </div>
-                  <div>&#8226;</div>
+                  <div className="md:block hidden">&#8226;</div>
                   <div className="flex items-center gap-1">
                     <span className="text-yellow-400">
                       <IconStarFilled size={16} />
@@ -121,7 +121,7 @@ const DetailPage: FC = () => {
                     </>
                   )}
                 </div>
-                <div className="flex gap-1 mt-3">
+                <div className="md:flex hidden gap-1 mt-3">
                   <div>Genre:</div>
                   {data?.media.genres.map((genre, i) => (
                     <div key={genre}>

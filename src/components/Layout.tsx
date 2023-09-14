@@ -22,7 +22,7 @@ const Layout: FC<Props> = ({ children }) => {
             Bookmarks
           </Link>
           <Link
-            to="https://github.com/mazipan/wibu"
+            to="https://github.com/ardifirmansyah8/animonster"
             target="_blank"
             className="p-2 bg-gray-200 border rounded-md"
           >

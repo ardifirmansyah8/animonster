@@ -70,7 +70,7 @@ const HomePage: FC = () => {
           threshold={10}
           loader={<Loader key={"loader"} />}
         >
-          <div className="grid gap-y-6 mt-5 2xl:grid-cols-6 xl:gap-x-8 lg:grid-cols-5 lg:gap-x-4">
+          <div className="grid gap-y-6 mt-5 2xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 xl:gap-x-8 gap-x-4">
             {anime.map((media) => (
               <Card key={media.id} data={media} />
             ))}

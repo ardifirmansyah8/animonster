@@ -25,7 +25,7 @@ const Genres: FC<Props> = ({ selectedGenres, onChangeSelectedGenre }) => {
   };
 
   return (
-    <div className="grid xl:grid-cols-10 lg:grid-cols-8 gap-4">
+    <div className="grid xl:grid-cols-10 lg:grid-cols-8 md:grid-cols-5 grid-cols-3 gap-4">
       {data?.genres.map((genre) => (
         <div
           key={genre}
